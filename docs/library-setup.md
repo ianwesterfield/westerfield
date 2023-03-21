@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# [Westerfield.cloud](../README.md) / [Recipe](./recipe.md) / <b>Library Setup</b>
+# [westerfield-cloud](../README.md) / [Recipe](./recipe.md) / <b>Library Setup</b>
 
 <!-- omit in toc -->
 #### 0.1 Please review [Using this Guide](./recipe.md#1-using-this-guide) before continuing.

@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# [Westerfield.cloud](../README.md) / [Recipe](../recipe.md) / <b>Configure Package.json</b>
+# [westerfield-cloud](../README.md) / [Recipe](../recipe.md) / <b>Configure Package.json</b>
 
 <!-- omit in toc -->
 ### 0.1 Please review [Using this Guide](/recipe.md#1-using-this-guide) before continuing.
@@ -14,7 +14,7 @@
     {
       "repository": {
         "type": "git",
-        "url": "https://github.com/ianwesterfield/westerfield.cloud.git",
+        "url": "https://github.com/ianwesterfield/westerfield-cloud.git",
         "directory": "./projects/shell"
       },
       "author": {

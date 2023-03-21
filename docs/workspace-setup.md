@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# [Westerfield.cloud](../README.md) / [Recipe](./recipe.md) / <b>Workspace Setup</b>
+# [westerfield-cloud](../README.md) / [Recipe](./recipe.md) / <b>Workspace Setup</b>
 #### 0.1. Please review [Using This Guide](./recipe.md#1-using-this-guide) before continuing.
 
 <!-- omit in toc -->

@@ -7,7 +7,7 @@ export class AppPage {
 
   getTitleText(): Promise<string> {
     return element(
-      by.css('westerfield.cloud-root .content span')
+      by.css('westerfield-cloud-root .content span')
     ).getText() as Promise<string>;
   }
 }

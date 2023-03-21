@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# [Westerfield.cloud](../README.md) / <b>Recipe</b>
+# [westerfield-cloud](../README.md) / <b>Recipe</b>
 
 <!-- omit in toc -->
 ## Steps

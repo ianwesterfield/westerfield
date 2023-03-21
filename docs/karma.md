@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# [Westerfield.cloud](../README.md) / [Recipe](../recipe.md) / <b>Configure Karma</b>
+# [westerfield-cloud](../README.md) / [Recipe](../recipe.md) / <b>Configure Karma</b>
 
 <!-- omit in toc -->
 #### Please review [Using This Guide](../recipe.md#1-using-this-guide) before continuing.

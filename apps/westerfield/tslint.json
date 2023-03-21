@@ -2,6 +2,6 @@
   "extends": "../tslint.json",
   "rules": {
     "directive-selector": [true, "attribute", "westerfieldCloud", "camelCase"],
-    "component-selector": [true, "element", "westerfield.cloud", "kebab-case"]
+    "component-selector": [true, "element", "westerfield-cloud", "kebab-case"]
   }
 }
