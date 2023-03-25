@@ -1,0 +1,31 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "npm install -g @angular/cli && npm install -g nx",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+		"Angular.ng-template",
+		"streetsidesoftware.code-spell-checker",
+		"dbaeumer.vscode-eslint",
+		"Shinotatwu-DS.file-tree-generator",
+		"GitHub.copilot",
+		"eamodio.gitlens",
+		"ZainChen.json",
+		"herrmannplatz.npm-dependency-links",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"esbenp.prettier-vscode",
+		"Thinker.sort-json",
+		"jock.svg",
+		"DotJoshJohnson.xml",
+		"wayou.vscode-todo-highlight",
+		"MariusAlchimavicius.json-to-ts",
+		"yzhang.markdown-all-in-one",
+		"DavidAnson.vscode-markdownlint",
+		"mrmlnc.vscode-scss",
+		"redhat.vscode-yaml",
+		"blinkshellinc.blink-fs"
+	]
+    }
+  }
+}
