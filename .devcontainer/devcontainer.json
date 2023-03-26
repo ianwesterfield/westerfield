@@ -1,10 +1,6 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	"postAttachCommand": "npm install",
-	"features": {
-		"ghcr.io/balazs23/devcontainers-features/nx": {},
-		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {}
-	},
+	"image": "mcr.microsoft.com/devcontainers/typescript-node",
+	"postAttachCommand": "nvm install lts/* && use lts/* && npm install && npm install -g @angular/cli nx",
 	"customizations": {
 		"vscode": {
 			"extensions": [
