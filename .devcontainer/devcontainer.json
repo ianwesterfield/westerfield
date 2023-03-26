@@ -4,7 +4,7 @@
 		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
 		"ghcr.io/devcontainers-contrib/features/nx-npm": {}
 	},
-	"postAttachCommand": "nvm use lts/* && npm install",
+	"postAttachCommand": "nvm use lts/*",
 	"customizations": {
 		"vscode": {
 			"extensions": [
