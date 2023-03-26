@@ -1,6 +1,10 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/typescript-node",
-	"postAttachCommand": "nvm install lts/* && use lts/* && npm install && npm install -g @angular/cli nx",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
+		"ghcr.io/devcontainers-contrib/features/nx-npm": {}
+	},
+	"postAttachCommand": "nvm use lts/* && npm install",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -13,7 +17,8 @@
 				"ZainChen.json",
 				"yzhang.markdown-all-in-one",
 				"rbalet.vscode-sorting-attrs",
-				"blinkshellinc.blink-fs"
+				"blinkshellinc.blink-fs",
+				"eamodio.gitlens"
 			]
 		}
 	}

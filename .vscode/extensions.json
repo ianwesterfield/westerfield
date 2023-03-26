@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "eamodio.gitlens",
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint"
