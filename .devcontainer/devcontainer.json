@@ -1,0 +1,19 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"nrwl.angular-console",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"Angular.ng-template",
+				"GitHub.remotehub",
+				"firsttris.vscode-jest-runner",
+				"ZainChen.json",
+				"yzhang.markdown-all-in-one",
+				"rbalet.vscode-sorting-attrs",
+				"blinkshellinc.blink-fs"
+			]
+		}
+	}
+}
