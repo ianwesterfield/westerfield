@@ -1,27 +1,24 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "lts"
-		},
 		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
 		"ghcr.io/devcontainers-contrib/features/nx-npm": {}
 	},
-	"postAttachCommand": "nvm use lts/*",
+	"postAttachCommand": "nvm use lts/* && exit",
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"nrwl.angular-console",
-				"esbenp.prettier-vscode",
-				"dbaeumer.vscode-eslint",
 				"Angular.ng-template",
-				"GitHub.remotehub",
-				"firsttris.vscode-jest-runner",
-				"ZainChen.json",
-				"yzhang.markdown-all-in-one",
-				"rbalet.vscode-sorting-attrs",
 				"blinkshellinc.blink-fs",
-				"eamodio.gitlens"
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens",
+				"esbenp.prettier-vscode",
+				"firsttris.vscode-jest-runner",
+				"GitHub.remotehub",
+				"nrwl.angular-console",
+				"rbalet.vscode-sorting-attrs",
+				"yzhang.markdown-all-in-one",
+				"ZainChen.json"
 			]
 		}
 	}
