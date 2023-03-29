@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
     "dbaeumer.vscode-eslint",
-    "ianwesterfield.dark-plus-dank"
+    "ianwesterfield.dark-plus-dank",
+    "blinkshellinc.blink-fs"
   ]
 }

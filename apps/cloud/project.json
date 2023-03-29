@@ -53,7 +53,8 @@
           "browserTarget": "cloud:build:production"
         },
         "development": {
-          "browserTarget": "cloud:build:development"
+          "browserTarget": "cloud:build:development",
+          "host": "0.0.0.0"
         }
       },
       "defaultConfiguration": "development"

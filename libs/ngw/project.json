@@ -1,0 +1,52 @@
+{
+  "name": "ngw",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ngw/src",
+  "prefix": "ngw",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ngw/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ngw/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ngw/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ngw/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ngw/**/*.ts",
+          "libs/ngw/**/*.html",
+          "libs/ngw/components/button/**/*.ts",
+          "libs/ngw/components/button/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
