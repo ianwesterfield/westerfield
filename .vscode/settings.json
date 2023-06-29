@@ -1,3 +1,9 @@
 {
+	"editor.fontFamily": "'Dank Mono', './.devcontainer/fonts/DankMono-Regular.ttf', './.devcontainer/fonts/DankMono-Italic.ttf', Menlo, Monaco, 'Courier New', monospace",
+	"files.autoSave": "onFocusChange",
+	"sonarlint.connectedMode.project": {
+		"connectionId": "",
+		"projectKey": ""
+	}
 }
 
