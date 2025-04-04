@@ -6,17 +6,11 @@
     "strictTemplates": true
   },
   "compilerOptions": {
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
-    "paths": {
-      "@westerfield/air/*": [
-        "../../libs/air/*"
-      ]
-    },
     "strict": true,
     "target": "es2022",
     "useDefineForClassFields": false
@@ -26,10 +20,7 @@
   "include": [],
   "references": [
     {
-      "path": "./tsconfig.editor.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.lib.json"
     },
     {
       "path": "./tsconfig.spec.json"
