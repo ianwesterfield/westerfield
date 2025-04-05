@@ -61,7 +61,7 @@
     "typescript": "~5.4.2"
   },
   "license": "UNLICENSED",
-  "name": "@westerfield/src",
+  "name": "@westerfield/repo",
   "private": true,
   "scripts": {},
   "version": "1"

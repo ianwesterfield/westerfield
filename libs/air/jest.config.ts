@@ -2,7 +2,7 @@
 export default {
   displayName: 'air',
   preset: '../../jest.preset.js',
-  setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/test-setup.ts'],
   coverageDirectory: '../../coverage/libs/air',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [

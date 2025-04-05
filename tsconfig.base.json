@@ -5,26 +5,35 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "lib": [
       "dom",
-      "es2020"
+      "es2022"
     ],
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noPropertyAccessFromIndexSignature": true,
     "paths": {
       "@westerfield/air/*": [
-        "libs/air/*"
+        "./libs/air/*"
       ]
     },
     "rootDir": ".",
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "target": "es2015"
+    "strict": true,
+    "target": "es2022",
+    "useDefineForClassFields": false
   },
   "exclude": [
     "node_modules",
-    "tmp"
+    "tmp",
+    "dst"
   ]
 }

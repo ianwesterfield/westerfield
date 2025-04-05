@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "cloud",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "prefix": "app",
   "projectType": "application",
   "sourceRoot": "apps/cloud/src",
@@ -32,31 +32,22 @@
       "defaultConfiguration": "production",
       "executor": "@angular-devkit/build-angular:application",
       "options": {
-        "assets": [
-          "apps/cloud/src/assets",
-          "apps/cloud/src/favicon.ico"
-        ],
+        "assets": ["apps/cloud/src/assets", "apps/cloud/src/favicon.ico"],
         "browser": "apps/cloud/src/main.ts",
         "index": "apps/cloud/src/index.html",
         "inlineStyleLanguage": "scss",
         "outputPath": "dist/apps/cloud",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "prerender": true,
         "scripts": [],
         "server": "apps/cloud/src/main.server.ts",
         "ssr": {
           "entry": "apps/cloud/server.ts"
         },
-        "styles": [
-          "apps/cloud/src/styles.scss"
-        ],
+        "styles": ["apps/cloud/src/styles.scss"],
         "tsConfig": "apps/cloud/tsconfig.app.json"
       },
-      "outputs": [
-        "{options.outputPath}"
-      ]
+      "outputs": ["{options.outputPath}"]
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -84,9 +75,7 @@
       "options": {
         "jestConfig": "apps/cloud/jest.config.ts"
       },
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ]
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"]
     }
   }
 }
