@@ -31,6 +31,9 @@
     "target": "es2022",
     "useDefineForClassFields": false
   },
+  "include": [
+    "**/*.stories.ts"
+  ],
   "exclude": [
     "node_modules",
     "tmp",
