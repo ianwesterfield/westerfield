@@ -1,11 +1,14 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { HeaderComponent } from '../../header';
+import { Component } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+
 
 @Component({
-  selector: 'wui-shell',
-  imports: [CommonModule],
-  templateUrl: './shell.component.html',
-  styleUrl: './shell.component.scss',
-  encapsulation: ViewEncapsulation.None,
+  selector: "wui-shell",
+  standalone: true,
+  imports: [HeaderComponent],
+  providers: [MatIconRegistry],
+  templateUrl: "./shell.component.html",
+  styleUrl: "./shell.component.scss",
 })
-export class ShellComponent {}
+export class ShellComponent { }

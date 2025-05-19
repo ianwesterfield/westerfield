@@ -1,5 +1,5 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
@@ -14,9 +14,19 @@
       "es2020",
       "dom"
     ],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
+    "skipLibCheck": false,
+    "skipDefaultLibCheck": false,
     "baseUrl": ".",
+    "stylePreprocessorOptions": {
+      "includePaths": [
+        "libs/ui/src"
+      ]
+    },
+    "paths": {
+      "@westerfield/ui/*": [
+        "./libs/ui/*"
+      ]
+    },
   },
   "exclude": [
     "node_modules",

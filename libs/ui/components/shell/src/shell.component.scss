@@ -1,4 +1,8 @@
-// Component has no encapsulation
-wui-shell {
+:host {
+  position: fixed;
+  width: 100%;
+}
 
+.--shell-content {
+  overflow: auto;
 }

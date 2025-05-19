@@ -1,0 +1,15 @@
+@forward './variants/uw.scss';
+@forward './variants/mesosync.scss';
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+html,
+body {
+  height: 100%;
+}
+
+.mat-mdc-card-title {
+  padding: 0 0.8rem;
+}
