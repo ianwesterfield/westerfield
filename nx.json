@@ -50,5 +50,6 @@
     "version": {
       "preVersionCommand": "npx nx run-many -t build"
     }
-  }
+  },
+  "nxCloudId": "682a9660f0eb866e6f485bab"
 }
