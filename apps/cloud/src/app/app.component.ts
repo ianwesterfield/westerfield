@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ShellComponent } from '@westerfield/ui/components/shell';
 
 @Component({
-  standalone: true,
-  imports: [RouterModule],
-  selector: 'app-root',
+  imports: [RouterModule, ShellComponent],
+  selector: 'cloud-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-}
+export class AppComponent { }

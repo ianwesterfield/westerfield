@@ -1,62 +1,71 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "cloud",
-  "prefix": "app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
+  "prefix": "cloud",
   "sourceRoot": "apps/cloud/src",
   "tags": [],
   "targets": {
     "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/cloud",
+        "index": "apps/cloud/src/index.html",
+        "browser": "apps/cloud/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/cloud/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/cloud/public"
+          }
+        ],
+        "styles": ["apps/cloud/src/styles.scss"],
+        "scripts": [],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "libs/ui/src"
+          ]
+        }
+      },
       "configurations": {
-        "development": {
-          "extractLicenses": false,
-          "optimization": false,
-          "sourceMap": true
-        },
         "production": {
           "budgets": [
             {
-              "maximumError": "1mb",
+              "type": "initial",
               "maximumWarning": "500kb",
-              "type": "initial"
+              "maximumError": "1mb"
             },
             {
-              "maximumError": "4kb",
-              "maximumWarning": "2kb",
-              "type": "anyComponentStyle"
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
             }
           ],
           "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
         }
       },
-      "defaultConfiguration": "production",
-      "executor": "@angular-devkit/build-angular:application",
-      "options": {
-        "assets": [
-          "apps/cloud/src/assets",
-          "apps/cloud/src/favicon.ico"
-        ],
-        "browser": "apps/cloud/src/main.ts",
-        "index": "apps/cloud/src/index.html",
-        "inlineStyleLanguage": "scss",
-        "outputPath": "dist/apps/cloud",
-        "polyfills": [
-          "zone.js"
-        ],
-        "prerender": true,
-        "scripts": [],
-        "server": "apps/cloud/src/main.server.ts",
-        "ssr": {
-          "entry": "apps/cloud/server.ts"
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "cloud:build:production"
         },
-        "styles": [
-          "apps/cloud/src/styles.scss"
-        ],
-        "tsConfig": "apps/cloud/tsconfig.app.json"
+        "development": {
+          "buildTarget": "cloud:build:development"
+        }
       },
-      "outputs": [
-        "{options.outputPath}"
-      ]
+      "defaultConfiguration": "development",
+      "continuous": true
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -67,26 +76,13 @@
     "lint": {
       "executor": "@nx/eslint:lint"
     },
-    "serve": {
-      "configurations": {
-        "development": {
-          "buildTarget": "cloud:build:development"
-        },
-        "production": {
-          "buildTarget": "cloud:build:production"
-        }
-      },
-      "defaultConfiguration": "development",
-      "executor": "@angular-devkit/build-angular:dev-server"
-    },
-    "test": {
-      "executor": "@nx/jest:jest",
+    "serve-static": {
+      "executor": "@nx/web:file-server",
       "options": {
-        "jestConfig": "apps/cloud/jest.config.ts"
-      },
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ]
+        "buildTarget": "cloud:build",
+        "staticFilePath": "dist/apps/cloud/browser",
+        "spa": true
+      }
     }
   }
 }

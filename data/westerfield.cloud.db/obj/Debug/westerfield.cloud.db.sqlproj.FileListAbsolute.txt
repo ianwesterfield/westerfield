@@ -1,0 +1,10 @@
+C:\Code\westerfield\services\westerfield.cloud.db\bin\Debug\westerfield.cloud.db.dacpac
+C:\Code\westerfield\services\westerfield.cloud.db\bin\Debug\westerfield.cloud.db.dll
+C:\Code\westerfield\services\westerfield.cloud.db\bin\Debug\westerfield.cloud.db.pdb
+C:\Code\westerfield\services\westerfield.cloud.db\obj\Debug\westerfield.cloud.db.sqlproj.AssemblyReference.cache
+C:\Code\westerfield\services\westerfield.cloud.db\obj\Debug\Model.xml
+C:\Code\westerfield\services\westerfield.cloud.db\obj\Debug\refactor.xml
+C:\Code\westerfield\services\westerfield.cloud.db\obj\Debug\postdeploy.sql
+C:\Code\westerfield\services\westerfield.cloud.db\obj\Debug\predeploy.sql
+C:\Code\westerfield\services\westerfield.cloud.db\obj\Debug\westerfield.cloud.db.dll
+C:\Code\westerfield\services\westerfield.cloud.db\obj\Debug\westerfield.cloud.db.pdb

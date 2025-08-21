@@ -1,27 +1,19 @@
 {
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  },
   "compilerOptions": {
+    "target": "es2022",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "paths": {
-      "@westerfield/air/*": [
-        "../../libs/air/*"
-      ]
-    },
     "strict": true,
-    "target": "es2022",
-    "useDefineForClassFields": false
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@westerfield/ui/*": [
+        "libs/ui/*"
+      ],
+    }
   },
-  "extends": "../../tsconfig.base.json",
   "files": [],
   "include": [],
   "references": [
@@ -30,9 +22,13 @@
     },
     {
       "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
     }
-  ]
+  ],
+  "extends": "../../tsconfig.base.json",
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }

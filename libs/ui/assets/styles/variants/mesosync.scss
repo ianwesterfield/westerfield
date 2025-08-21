@@ -1,0 +1,43 @@
+@use 'sass:math' as math;
+@use '@angular/material' as mat;
+@use '../helpers' as helpers;
+
+@import url('https://use.typekit.net/gia2jdc.css');
+
+body {
+  &.press-theme-mesosync {
+    $primary-color: #1e4a66;
+    $secondary-color: #122d3d;
+    $accent-color: #40a0db;
+
+    $primary-palette: helpers.palette-gen-create-palette($primary-color);
+    $accent-palette: helpers.palette-gen-create-palette($accent-color);
+
+    $warn: mat.m2-define-palette(mat.$m2-red-palette);
+    $primary: mat.m2-define-palette($primary-palette);
+    $accent: mat.m2-define-palette($accent-palette);
+
+    $theme: mat.m2-define-dark-theme(
+      (
+        color: (
+          primary: $primary,
+          accent: $accent,
+          warn: $warn,
+        ),
+        typography: helpers.$typo-text-levels,
+        density: 0,
+      )
+    );
+
+    $background-gradient: linear-gradient(
+      180deg,
+      $secondary-color 10%,
+      $primary-color 70%
+    );
+
+    @include mat.all-component-themes($theme);
+
+    background: $background-gradient !important;
+    margin: 0;
+  }
+}
