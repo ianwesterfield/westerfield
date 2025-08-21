@@ -17,11 +17,6 @@
     "skipLibCheck": false,
     "skipDefaultLibCheck": false,
     "baseUrl": ".",
-    "stylePreprocessorOptions": {
-      "includePaths": [
-        "libs/ui/src"
-      ]
-    },
     "paths": {
       "@westerfield/ui/*": [
         "./libs/ui/*"

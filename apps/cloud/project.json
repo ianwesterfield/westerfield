@@ -23,7 +23,12 @@
           }
         ],
         "styles": ["apps/cloud/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "libs/ui/src"
+          ]
+        }
       },
       "configurations": {
         "production": {

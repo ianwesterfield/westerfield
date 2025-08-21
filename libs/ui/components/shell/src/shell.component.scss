@@ -1,8 +1,12 @@
 :host {
+  bottom: 0;
+  left: 0;
   position: fixed;
+  right: 0;
+  top: 0;
   width: 100%;
 }
 
-.--shell-content {
+.--wui-shell-content {
   overflow: auto;
 }
