@@ -5,7 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
-    "@angular/common": "20.3.14",
+    "@angular/common": "20.3.25",
     "@angular/compiler": "20.3.18",
     "@angular/core": "20.3.18",
     "@angular/forms": "20.1.7",
